@@ -1,4 +1,4 @@
-# Pr-ctico-Javascript
+# Curso-Práctico de Javascript
 
 ...
 
