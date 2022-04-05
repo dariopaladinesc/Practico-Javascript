@@ -1,0 +1,22 @@
+.principal-header .header-title{
+    text-align: center;
+}
+
+.principal-header h1{
+    color: red;
+}
+
+.principal-main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+
+}
+
+.section-cuadrado{
+    padding: 10px;
+}
+
+.section-cuadrado input{
+    margin: 5px 0px 5px 0px;
+}
