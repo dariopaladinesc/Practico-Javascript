@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <header class = "principal-header">
+        <h1 class ="header-title">Figuras geométricas</h1>
+        <h2 class = "header-subtitle header-title">Este es el primer taller del curso práctico de Javascript</h2>
+    </header>
+    <main class = "principal-main">
+        <section class = "section-cuadrado">
+            <h3>Calcula el área y perímetro de un cuadrado</h3>
+            <form>
+                <label for = "inputcuadrado">
+                    Escribe cuanto mide cada lado de tu cuadrado
+                </label> <br>
+                <input id = "inputcuadrado" type= "number" placeholder="Ingresa un número"> <br>
+                <button type="button" onclick= "perimetrocuadrado()" >Calcula el perímetro</button> 
+                <button type="button" onclick= "areacuadrado()">Calcula el área</button>
+            </form>
+        </section>
