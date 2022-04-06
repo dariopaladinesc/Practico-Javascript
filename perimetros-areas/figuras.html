@@ -14,11 +14,9 @@
     </header>
     <main class = "principal-main">
         <section class = "section-cuadrado section-forms">
-            <h3>Calcula el área y perímetro de un cuadrado</h3>
+            <h3 class = "tittles">Calcula el área y perímetro de un cuadrado</h3>
             <form>
-                <label for = "inputcuadrado">
-                    Escribe cuanto mide cada lado de tu cuadrado
-                </label> <br>
+                <label for = "inputcuadrado" >  Escribe cuanto mide cada lado de tu cuadrado</label> <br>
                 <input id = "inputcuadrado" type= "number" placeholder="Ingresa un número"> <br>
                 <button type="button" onclick= "perimetrocuadrado()" >Calcula el perímetro</button> 
                 <button type="button" onclick= "areacuadrado()">Calcula el área</button>
@@ -27,12 +25,12 @@
             </form>
         </section>
         <section class = "section-triangulo section-forms">
-            <h3> Calcula el perímetro y área de un triángulo</h3>
+            <h3 class = "tittles" > Calcula el perímetro y área de un triángulo</h3>
             <form>
-                <label for="base1">Escribe los lados del triángulo para el perímetro y área</label> <br>
-                <input type="number" id = "base1" placeholder= "Ingresa la base"> <br>
-                <input type="number" id = "lado-uno1" placeholder="Ingresa el lado 1"> <br>
+                <label for="" >Escribe los lados del triángulo para el perímetro y área</label> <br>
+                <input type="number" id = "lado-uno1" placeholder="Ingresa el lado 1"> 
                 <input type="number" id = "lado-dos1" placeholder="Ingresa el lado 2"> <br>
+                <input type="number" id = "base1" placeholder= "Ingresa la base">
                 <input type="number" id = "altura" placeholder="Ingresa la altura"> <br>
                 <button type = "button" onclick ="perimetrotriangulo()">Calcula el perímetro</button>
                 <button type = "button" onclick="areatriangulo()">Calcula el área</button>
@@ -41,10 +39,10 @@
             </form>
         </section>
         <section class = "section-circulo section-forms">
-            <h3>Calcula el perímetro y área de un circulo</h3>
+            <h3 class = "tittles" >Calcula el perímetro y área de un circulo</h3>
             <form>
-                <label for="">Ingresa el radio del circulo</label>
-                <input type="number" id ="inputD" placeholder = "ingresa el radio del circulo"> <br>
+                <label for="" >Ingresa el radio del circulo</label> <br>
+                <input type="number" id ="inputD" placeholder = "radio del circulo"> <br>
                 <button type = "button" onclick="perimetrocirculo()">Calcula el perímetro</button> 
                 <button type = "button" onclick="areacirculo()">Calcula el área</button>
                 <p id = "result-perimetroCir"></p>
@@ -52,13 +50,13 @@
             </form>
         </section>
         <section class = "section-altura section-forms">
-            <h3> Calcula el perímetro y área de un triangulo isóceles</h3>
+            <h3 class = "tittles"> Calcula el perímetro y área de un triangulo isóceles</h3>
             <form>
-                <label for="">Escribe los lados para calcular la altura</label> <br>
+                <label for="" >Escribe los lados para calcular la altura</label> <br>
                 <label>***Para que sea un triangulo isóceles debe tener sus 2 lados iguales </label> <br>
                 <input type="number" id = "lado-uno" placeholder="Ingresa el lado 1">
                 <input type="number" id = "lado-dos" placeholder="Ingresa el lado 2"> <br>
-                <input type="number" id = "base" placeholder= "Ingresa la base">
+                <input type="number" id = "base" placeholder= "Ingresa la base"> <br>
                 <button type = "button" onclick ="alturaTR()">Calcula la altura</button>
                 <p id = "result-trianguloI"></p>
             </form>

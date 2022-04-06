@@ -30,3 +30,43 @@
     border: 2px solid black;
     margin-left: 2rem;
 }
+
+.principal-main .tittles{
+    text-align: center;
+    color: rgb(0, 0, 70);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.principal-main input{
+    margin: 5px;
+    height: 30px;
+    box-shadow: 3px 3px grey;
+}
+
+.principal-main label{
+    margin-left: 5px;
+    color: rgb(0, 0, 70);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.principal-main button{
+    margin:5px;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 8px;
+    background-color:rgb(191, 188, 216);
+    cursor: pointer;
+}
+
+.principal-main button:hover{
+    background-color:rgb(149, 142, 211);
+}
+
+.principal-main p{
+    margin-left: 5px;
+    color:rgb(0, 0, 70);
+    font-size: 16px;
+    font-weight: bold;
+}
