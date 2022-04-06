@@ -35,6 +35,33 @@ function areaT(base, altura){
 console.groupEnd();
 
 
+/////CIRCULO///////////////////////////////////////////////////
+
+console.group("Circulo"); 
+// const radio = 5;
+ const pi = Math.PI;
+//LOS USUARIOS SOLO SABEN EL VALOR DEL RADIO
+
+function diametroCir(radio){ //calculamos el diametro en un FN teniendo como parametro el radio
+    return radio *2
+}
+function perimetroCir(radio){
+    const diametro = diametroCir(radio)// llamamos a la función que calcula el diametro 
+    return diametro * pi //area = D*pi
+} 
+
+function areaCir (radio){
+    return (radio * radio) * pi;
+}
+console.groupEnd();
+
+
+
+
+
+
+
+
 
 ///Interaccion con html//////////////////////////
 
@@ -78,4 +105,21 @@ function areatriangulo(){
 
     const areaTR = areaT(base, altura);
     alert("El área del triángulo es " + areaTR);
+}
+
+////CIRCULO//////
+
+function perimetrocirculo(){
+    const diam = document.getElementById("inputD");
+    const diametro = diam.value;
+    const radio = perimetroCir(diametro);
+    alert("El perímetro del circulo es " + radio)
+}
+
+
+function areacirculo(){
+    const diam = document.getElementById("inputD");
+    const diametro = diam.value;
+    const radio = areaCir(diametro);
+    alert("El area del circulo es " + radio)
 }
