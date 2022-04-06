@@ -113,7 +113,8 @@ function perimetrocirculo(){
     const diam = document.getElementById("inputD");
     const diametro = diam.value;
     const radio = perimetroCir(diametro);
-    alert("El perímetro del circulo es " + radio)
+    const radiototal = radio.toFixed(3)
+    alert("El perímetro del circulo es " + radiototal)
 }
 
 
@@ -121,7 +122,8 @@ function areacirculo(){
     const diam = document.getElementById("inputD");
     const diametro = diam.value;
     const radio = areaCir(diametro);
-    alert("El area del circulo es " + radio)
+    const radiototal1 = radio.toFixed(3)
+    alert("El area del circulo es " + radiototal1)
 }
 
   //calcular altura  
@@ -143,7 +145,8 @@ function alturaTR(){
 
     if (a1 == a2 ){
         const total = altura(b, a1, a2);
-        alert("La altura del triangulo es " + total);  
+        const total1 = total.toFixed(3)
+        alert("La altura del triangulo es " + total1);  
     }
     else 
     alert("No son valores de triangulo isóceles")
