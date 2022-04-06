@@ -3,16 +3,18 @@
 }
 
 .principal-body{
-    background:linear-gradient(to top, rgb(61, 61, 61), rgb(255, 185, 56), white);
+    background-color:rgb(128, 127, 127);
 }
 
 .principal-header .header-title{
     text-align: center;
+    color:brown;
+    margin: 0px 0px 12px 0px
 
 }
 
-.principal-header h1{
-    color: red;
+.principal-header .header-subtitle{
+   color: rgb(0, 0, 42);
 }
 
 .principal-main{
@@ -25,15 +27,16 @@
 
 .principal-main .section-forms{
     width: 90%;
-    height: 100%;
-    background-color: rgb(104, 187, 104);
+    height:auto;
+    background:linear-gradient(to top, rgb(173, 172, 172) , rgb(47, 62, 191) );
     border: 2px solid black;
     margin-left: 2rem;
+    box-shadow: 7px 7px 7px 7px rgb(81, 78, 78);
 }
 
 .principal-main .tittles{
     text-align: center;
-    color: rgb(0, 0, 70);
+    color: rgb(222, 222, 222);
     font-size: 18px;
     font-weight: bold;
 }
@@ -41,12 +44,12 @@
 .principal-main input{
     margin: 5px;
     height: 30px;
-    box-shadow: 3px 3px grey;
+    box-shadow: 3px 3px rgb(48, 48, 48);
 }
 
 .principal-main label{
     margin-left: 5px;
-    color: rgb(0, 0, 70);
+    color: rgb(222, 222, 222);
     font-size: 17px;
     font-weight: 500;
 }
@@ -61,12 +64,51 @@
 }
 
 .principal-main button:hover{
-    background-color:rgb(149, 142, 211);
+    background-color:rgb(77, 73, 115);
 }
 
 .principal-main p{
-    margin-left: 5px;
+    margin:10px 5px;
     color:rgb(0, 0, 70);
     font-size: 16px;
     font-weight: bold;
+}
+
+.principal-main .section-forms .sections-results{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: 215px;
+}
+
+.sections-results img{
+    width: 170px;
+    height: 160px;
+    align-self: center;
+}
+
+.sections-results picture{
+    display: flex;
+    place-items: center;
+}
+
+.sections-results p{
+    color: rgb(41, 40, 108);
+}
+
+.section-altura .label-note{
+    font-size: 15px;
+    color: black;
+}
+
+.principal-header .navigation{
+    display: flex;
+    justify-content: end;
+}
+
+.principal-header .navigation a{
+    margin: 10px 20px 0px 0px;
+    text-decoration: none;
+    font-size: 17px;
+    color:brown;
+    font-weight: bold;  
 }
