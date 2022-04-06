@@ -34,12 +34,11 @@ const promedio = sumatoria / lista2.length;
 //       4000,
 //    ];
   
-   const lista1 = lista1.sort(function(a,b){ // el metodo .sort nos permite ordenar datos de un array, esto agregado con la fn y los parametros a-b
-       return a - b;
-   })
-   console.log(lista1);
-  
-   function medianaritmetica (lista1){
+
+   function medianaritmetica (lista5){
+    const lista1 = lista5.sort(function(a,b){ // el metodo .sort nos permite ordenar datos de un array, esto agregado con la fn y los parametros a-b
+        return a - b;
+    })
       const mitad = lista1.length % 2; //Comprobamos que el array sea par (% devuelve el residuo)
       const dimension = lista1.length / 2;  //Encontramos el numero medio de la longitud del array
       if (mitad == 0){
@@ -54,87 +53,89 @@ const promedio = sumatoria / lista2.length;
    }
   
   
-  
    //////////////////MODA////////////////////
   
   
-  function  calcularmoda(lista){
+   function  calcularmoda(lista){
   
-  const contador = [];
-  
-  lista.map(
-      function (elemento){
-          if (contador[elemento]){
-              contador[elemento] += 1;
-          }
-          else {
-              contador[elemento] = 1
-          }
-  
-      }
-  );
-  
-  const lista1Array = Object.entries(contador).sort(
-      function(a,b){
-       return   a - b
-      }
-      
-      );
-  
-  const calcularmoda = lista1Array[lista1Array.length - 1]
-  return calcularmoda;
-  }
-  
-  
-  
-  //////////////////////MEDIA ARITMETICA//////////
-  //La media aritmetica es la media tomando en consideracion el peso de cada valor asignado
-  //FORMULA [(N3*C3)+ (N3*C3)+ (N3*C3)] / (C1+C2+C3)
-  
-  
-  const notes =[
-      {
-          course: "Educacion fisica",
-          note: 10,
-          credit: 2,
-      },
-      {
-          course: "Programacion",
-          note: 8,
-          credit: 5,
-      },
-      {
-          course: "Finanzas Personales",
-          note: 7,
-          credit: 5,   
-      }
-  ];
-  
-  //Resolver el numerador 
-  //Vamos a recorrer el array con el .map lo hacemos con la funcion y la propiedad de la funcion es la variable que recorre el array y que posteriormente va multiplicando cada propiedad del array
-  
-  const notescredit = notes.map(function(noteobject){  
-      return noteobject.note * noteobject.credit;    //notescredit=[20, 40, 35]
-  });
-  
-  //Sumamos las respuestas de la multiplicacion de los pesos por la calificacion  (terminar todo el numerador)
-  const sum = 0;
-  const notesum = notescredit.reduce(function(sum, newvalue){
-          return sum + newvalue;            
-      }
-  )
-  
-  
-  //Resolver el denominador:
-  //Para ello usamos .map para recorrer el array para obtener el valor del peso (credito), y posteriormente .reduce para sumar todos los valores obtenidos del recorrido con .map
-  
-  const credits = notes.map (function(value1){  //   credits =[2,5,5]
-      return value1.credit; 
-  })
-  
-  const sumcredits = credits.reduce(function(val1 = 0, val2){
-      return val1 + val2   
-  });
-  
-  const result = notesum / sumcredits ;  //Terminanos la operacion dividiendo numerador para denominador
+    const contador = [];
+    
+    lista.map(
+        function (elemento){
+            if (contador[elemento]){
+                contador[elemento] += 1;
+            }
+            else {
+                contador[elemento] = 1
+            }
+    
+        }
+    );
+    
+    const lista1Array = Object.entries(contador).sort(
+        function(a,b){
+         return   a[1] - b[1]
+        }
+        
+        );
+    
+    const calcularmoda = lista1Array[lista1Array.length - 1]
+    return calcularmoda;
+    }
+    
+    
+    
+    //////////////////////MEDIA ARITMETICA//////////
+    //La media aritmetica es la media tomando en consideracion el peso de cada valor asignado
+    //FORMULA [(N3*C3)+ (N3*C3)+ (N3*C3)] / (C1+C2+C3)
+    
+    
+    const notes =[
+        {
+            course: "Educacion fisica",
+            note: 10,
+            credit: 2,
+        },
+        {
+            course: "Programacion",
+            note: 8,
+            credit: 5,
+        },
+        {
+            course: "Finanzas Personales",
+            note: 7,
+            credit: 5,   
+        }
+    ];
+    
+    //Resolver el numerador 
+    //Vamos a recorrer el array con el .map lo hacemos con la funcion y la propiedad de la funcion es la variable que recorre el array y que posteriormente va multiplicando cada propiedad del array
+    
+    const notescredit = notes.map(function(noteobject){  
+        return noteobject.note * noteobject.credit;    //notescredit=[20, 40, 35]
+    });
+    
+    //Sumamos las respuestas de la multiplicacion de los pesos por la calificacion  (terminar todo el numerador)
+    const sum = 0;
+    const notesum = notescredit.reduce(function(sum, newvalue){
+            return sum + newvalue;            
+        }
+    )
+    
+    
+    //Resolver el denominador:
+    //Para ello usamos .map para recorrer el array para obtener el valor del peso (credito), y posteriormente .reduce para sumar todos los valores obtenidos del recorrido con .map
+    
+    const credits = notes.map (function(value1){  //   credits =[2,5,5]
+        return value1.credit; 
+    })
+    
+    const sumcredits = credits.reduce(function(val1 = 0, val2){
+        return val1 + val2   
+    });
+    
+    const result = notesum / sumcredits ;  //Terminanos la operacion dividiendo numerador para denominador
+
+    console.log(result.toFixed(2))
+    
   
