@@ -123,3 +123,28 @@ function areacirculo(){
     const radio = areaCir(diametro);
     alert("El area del circulo es " + radio)
 }
+
+  //calcular altura  
+
+  function altura(base, lado, lado1){
+    
+    const subtotal = Math.sqrt((lado**2)-((base**2)/4));
+    return subtotal;
+    
+    }
+
+function alturaTR(){
+    const b1 = document.getElementById("base");
+    const b = Number(b1.value); 
+    const l1 = document.getElementById("lado-uno");
+    const a1 = Number(l1.value);
+    const l2 = document.getElementById("lado-dos");
+    const a2 = Number(l2.value);
+
+    if (a1 == a2 ){
+        const total = altura(b, a1, a2);
+        alert("La altura del triangulo es " + total);  
+    }
+    else 
+    alert("No son valores de triangulo isóceles")
+}
