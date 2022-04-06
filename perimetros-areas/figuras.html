@@ -7,13 +7,13 @@
     <title>Figuras geometricas</title>
     <link rel="stylesheet" href="./estilos.css">
 </head>
-<body>
+<body class = "principal-body">
     <header class = "principal-header">
         <h1 class ="header-title">Figuras geométricas</h1>
         <h2 class = "header-subtitle header-title">Este es el primer taller del curso práctico de Javascript</h2>
     </header>
     <main class = "principal-main">
-        <section class = "section-cuadrado">
+        <section class = "section-cuadrado section-forms">
             <h3>Calcula el área y perímetro de un cuadrado</h3>
             <form>
                 <label for = "inputcuadrado">
@@ -22,30 +22,36 @@
                 <input id = "inputcuadrado" type= "number" placeholder="Ingresa un número"> <br>
                 <button type="button" onclick= "perimetrocuadrado()" >Calcula el perímetro</button> 
                 <button type="button" onclick= "areacuadrado()">Calcula el área</button>
+                <p id = "result-perimetroC"></p>
+                <p id = "result-areaC"></p>
             </form>
         </section>
-        <section>
+        <section class = "section-triangulo section-forms">
             <h3> Calcula el perímetro y área de un triángulo</h3>
             <form>
                 <label for="base1">Escribe los lados del triángulo para el perímetro y área</label> <br>
-                <input type="number" id = "base1" placeholder= "Ingresa la base">
-                <input type="number" id = "lado-uno1" placeholder="Ingresa el lado 1">
-                <input type="number" id = "lado-dos1" placeholder="Ingresa el lado 2">
+                <input type="number" id = "base1" placeholder= "Ingresa la base"> <br>
+                <input type="number" id = "lado-uno1" placeholder="Ingresa el lado 1"> <br>
+                <input type="number" id = "lado-dos1" placeholder="Ingresa el lado 2"> <br>
                 <input type="number" id = "altura" placeholder="Ingresa la altura"> <br>
-                <button onclick ="perimetrotriangulo()">Calcula el perímetro</button>
-                <button onclick="areatriangulo()">Calcula el área</button>
+                <button type = "button" onclick ="perimetrotriangulo()">Calcula el perímetro</button>
+                <button type = "button" onclick="areatriangulo()">Calcula el área</button>
+                <p id = "result-perimetroT"></p>
+                <p id = "result-areaT"></p>
             </form>
         </section>
-        <section>
+        <section class = "section-circulo section-forms">
             <h3>Calcula el perímetro y área de un circulo</h3>
             <form>
                 <label for="">Ingresa el radio del circulo</label>
                 <input type="number" id ="inputD" placeholder = "ingresa el radio del circulo"> <br>
-                <button onclick="perimetrocirculo()">Calcula el perímetro</button> 
-                <button onclick="areacirculo()">Calcula el área</button>
+                <button type = "button" onclick="perimetrocirculo()">Calcula el perímetro</button> 
+                <button type = "button" onclick="areacirculo()">Calcula el área</button>
+                <p id = "result-perimetroCir"></p>
+                <p id = "result-areaCir"></p>
             </form>
         </section>
-        <section>
+        <section class = "section-altura section-forms">
             <h3> Calcula el perímetro y área de un triangulo isóceles</h3>
             <form>
                 <label for="">Escribe los lados para calcular la altura</label> <br>
@@ -53,7 +59,8 @@
                 <input type="number" id = "lado-uno" placeholder="Ingresa el lado 1">
                 <input type="number" id = "lado-dos" placeholder="Ingresa el lado 2"> <br>
                 <input type="number" id = "base" placeholder= "Ingresa la base">
-                <button onclick ="alturaTR()">Calcula la altura</button>
+                <button type = "button" onclick ="alturaTR()">Calcula la altura</button>
+                <p id = "result-trianguloI"></p>
             </form>
         </section>
     </main>

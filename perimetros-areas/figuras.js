@@ -69,7 +69,8 @@ function perimetrocuadrado(){
     const input = document.getElementById("inputcuadrado"); //traemos el valor ingreasado por el usuario en HTML y lo guardamos en la variable input
     const value = input.value; //convertimos misma variable en numero y la guardamos en variable "value"
     const perimetro1 = perimetroC(value); //llamamos la funcion que calcula el perimetro y pasamos como parametro el valor ingresado por el usuario en este caso "value"
-    alert("El perimetro del cuadrado es " + perimetro1)
+    const result = document.getElementById("result-perimetroC");
+    result.innerText = "El perímetro del cuadrado es de: " + perimetro1;
     
 }
 
@@ -77,7 +78,8 @@ function areacuadrado(){
     const input = document.getElementById("inputcuadrado"); 
     const value = input.value; 
     const area1 = areaC(value); 
-    alert("El area del cuadrado es " + area1)
+    const resultT = document.getElementById("result-areaC");
+    resultT.innerText = "El área del cuadrado es de: " + area1;
 }
 
 
@@ -90,10 +92,9 @@ function perimetrotriangulo(){
     const base = parseInt(base1.value);
     const lado1 = parseInt(lado11.value);
     const lado2 = parseInt(lado22.value);
-    
     const perimetroTR = perimetroT(base, lado1, lado2);
-    alert("El perímetro del triangulo es " + perimetroTR);
-
+    const resultTr = document.getElementById("result-perimetroT");
+    resultTr.innerText = "El perímetro del triangulo es de: " + perimetroTR;
 }
 
 
@@ -102,9 +103,9 @@ function areatriangulo(){
     const alt = document.getElementById("altura");
     const base = base1.value;
     const altura = alt.value;
-
     const areaTR = areaT(base, altura);
-    alert("El área del triángulo es " + areaTR);
+    const resultTRa = document.getElementById("result-areaT");
+    resultTRa.innerText = "El área del triangulo es de: " + areaTR;
 }
 
 ////CIRCULO//////
@@ -114,7 +115,8 @@ function perimetrocirculo(){
     const diametro = diam.value;
     const radio = perimetroCir(diametro);
     const radiototal = radio.toFixed(3)
-    alert("El perímetro del circulo es " + radiototal)
+    const resultCir = document.getElementById("result-perimetroCir");
+    resultCir.innerText = "El perímetro del circulo es de: " + radiototal;
 }
 
 
@@ -123,7 +125,8 @@ function areacirculo(){
     const diametro = diam.value;
     const radio = areaCir(diametro);
     const radiototal1 = radio.toFixed(3)
-    alert("El area del circulo es " + radiototal1)
+    const resultCirA = document.getElementById("result-areaCir");
+    resultCirA.innerText = "El área del circulo es de: " + radiototal1;
 }
 
   //calcular altura  
@@ -146,8 +149,9 @@ function alturaTR(){
     if (a1 == a2 ){
         const total = altura(b, a1, a2);
         const total1 = total.toFixed(3)
-        alert("La altura del triangulo es " + total1);  
+        const resultTRi = document.getElementById("result-trianguloI");
+        resultTRi.innerText = "La altura del triangulo es de: " + total1;
     }
     else 
-    alert("No son valores de triangulo isóceles")
+    alert("No son valores validos de un triangulo isóceles")
 }
