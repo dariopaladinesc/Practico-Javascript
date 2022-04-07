@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(37, 37, 37);
+    border: 2px solid rgba(191, 123, 255, 0.781);
+}
+.header{
+    text-align: center;
+}
+main{
+    display: grid;
+    justify-items: center;
+    margin: 0px 300px;
+    padding: 0px 0px 30px 0px;
+    height: auto;
+}
+.principal-nav{
+    display: flex;
+    text-decoration: none;
+    justify-content: end;
+}
+.principal-nav a{
+    margin:5px 20px 0px 0px;
+    font-size: 17px;
+    color: rgb(231, 206, 255);
+    text-decoration: none;
+    font-weight: 700;
+}
+.header h1{
+    margin-top: 10px;
+    color:rgb(231, 206, 255) ;
+}
+
+main h3{
+    width: 80%;
+    margin: 25px 20px 50px 20px;
+    padding: 15px;
+    text-align: justify;
+    --glow-color: rgb(217, 176, 255);
+ --glow-spread-color: rgba(191, 123, 255, 0.781);
+ --enhanced-glow-color: rgb(231, 206, 255);
+ --btn-color: rgb(100, 61, 136);
+ border: .25em solid var(--glow-color);
+ color: rgb(255, 255, 255);
+ background-color: var(--btn-color);
+ border-radius: 1em;
+ outline: none;
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+ position: relative;
+ transition: all 0.3s;
+ font-weight: 500;
+}
+
+.section-inputs{
+    --glow-color: rgb(217, 176, 255);
+ --glow-spread-color: rgba(191, 123, 255, 0.781);
+ --enhanced-glow-color: rgb(231, 206, 255);
+ --btn-color: rgb(100, 61, 136);
+ border: .25em solid var(--glow-color);
+ color: rgb(255, 255, 255);
+ background-color: var(--btn-color);
+ border-radius: 1em;
+ outline: none;
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+ position: relative;
+ transition: all 0.3s;
+}
+.section-inputs label{
+    margin: 0px 10px;
+}
+
+.section-inputs input{
+    margin: 10px 10px;
+    height: 30px;
+    background-color: var(--enhanced-glow-color);
+}
+
+.section-inputs button{
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--glow-color);
+    width: 100px;
+    cursor: pointer;
+    margin-left: 11rem;
+    color: black;
+    font-weight: bold;
+}
+
+.section-inputs button:hover{
+    background-color: var(--glow-spread-color);
+}
+
+.section-inputs p{
+    margin-left: 15px;
+}
