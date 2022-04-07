@@ -2,16 +2,16 @@
 function preciocondescuento(precio){
    const cupon1 = document.getElementById("cupon");
    const cupon = cupon1.value;
-   if (cupon == "CODE1"){
-   const valor = precio - (precio * 0.15);
+   if (cupon == "Basico"){
+   const valor = precio - (precio * 0.2);
    return valor;
 }
-   else if (cupon == "CODE2"){
-   const valor = precio - (precio * 0.25);
+   else if (cupon == "Premium"){
+   const valor = precio - (precio * 0.3);
    return valor;
 }
-   else if (cupon == "CODE3"){
-   const valor = precio - (precio * 0.35);
+   else if (cupon == "Gold"){
+   const valor = precio - (precio * 0.5);
    return valor;
 }
    else 

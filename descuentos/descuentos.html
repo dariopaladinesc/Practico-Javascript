@@ -4,29 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descuentos</title>
+    <link rel="stylesheet" href="./descuentos.css">
+    <title>Calculo de Descuentos</title>
 </head>
 <body>
-    <header>
-        <h1>Porcentajes y descuentos</h1> 
-        <p>Este es el segundo taller del curso práctico de Javascript</p>
+    <header class = "principal-header">
+        <nav class = "navigation-bar">
+            <a href="/perimetros-areas/figuras.html">Taller #1</a>
+            <a href="/descuentos/descuentos.html">Taller #2</a>
+            <a href="/media,moda,mediana/promedio.html">Taller #3</a>
+            <a href="/ejercicio-propuesto/calculo.html">Taller #4</a>
+        </nav>
+        <h1>Taller #2 Descuentos</h1> 
+        <p>Calcula el precio total de un producto con un cupon de descuento ingresado</p>
     </header>
-    <section>
-        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
-        <form action="">
-            <label for="inputprice">Escribo el precio del producto</label>
-            <input type="number" id="inputprice">
-            <button type="button" onclick="totalprice()">Calcular el precio total</button> <br>
-            <label for="cupon">Tienes algún cupón de descuento</label>
-            <input type="text" id="cupon" placeholder="Cupon de descuento">
-            <p id ="totalprice"></p> <!-- Creamos la etiqueta para mostrar el resultado  -->
+    <main class="principal-main">
+        <section class = "principal-section">
+            <h3>Calcula el precio a pagar de tus productos con descuento</h3>
+            <form action="">
+                <label for="inputprice" >Escribe  el precio del producto</label>
+                <input type="number" id="inputprice" placeholder="Precio $"> <br>
+                <label for="cupon">Escribe un cupón de descuento</label> 
+                <input type="text" id="cupon" placeholder="Cupon de descuento">
+                <button type="button" onclick="totalprice()">PRECIO TOTAL</button> <br>
+                <p id ="totalprice"></p> <!-- Creamos la etiqueta para mostrar el resultado  -->
+                <hr>
+            </form>
             <section>
-                <div>Cupon basico "CODE1" (15%)</div>
-                <div>Cupon moderado "CODE2" (25%)</div>
-                <div>Cupon recargado "CODE3" (35%)</div>
-            </section>
-        </form>
-    </section>
+                <p>Escoge un cupon de descuento</p>
+                <figure class = "cupons-figure"> 
+                    <img src="https://i.ibb.co/YyGWz6x/cupon-20.jpg" alt="Cupon1"> 
+                    <img src="https://i.ibb.co/10BMkgW/cupon-30.jpg" alt="Cupon2">
+                    <img src="https://i.ibb.co/f8196FJ/cupon-50.jpg" alt="Cupon3"> 
+                    <ul class = "list">
+                        <p></p>
+                        <li>Cupon 20% --> "Basico"</li>
+                        <li>Cupon 30% --> "Premium"</li>
+                        <li>Cupon 50% --> "Gold"</li>
+                    </ul>
+                </figure>
+               
+            </section> 
+        </section>
+             
+    </main>
     <script src="./descuentos.js"></script>
 </body>
 </html>
