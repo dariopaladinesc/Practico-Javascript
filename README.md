@@ -19,7 +19,7 @@
 -Quinto paso: Seleccionar un cupon disponible
 -Sexto paso: Encontrar el valor total de acuerdo al cupon de descuento
 
-## Taller #2: Ahorro mensual
+## Taller #3: Ahorro mensual
 
 -Primer paso: Definir los parámetros a evaluar
 -Segundo paso: Implementar las formulas en JS
